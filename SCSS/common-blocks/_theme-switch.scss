@@ -1,0 +1,25 @@
+.theme-switch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    padding: 6px;
+
+    &:active &__img{
+        scale: 0.9;
+        filter: drop-shadow(0px 0px 0px #000);
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        
+        filter: drop-shadow(0px 0px 3px #000);
+        transition: all 0.1s ease-in;  
+        user-select: none;
+    }
+}

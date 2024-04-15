@@ -1,0 +1,24 @@
+.section {
+    width: min(100%, 500px);
+    padding: 20px min(4vw, 25px);
+    margin: 0 auto;
+    box-shadow: var(--section-box-shadow);
+    border-radius: 8px;
+    background-color: var(--section-background);
+    position: relative;
+
+    &__title {
+        text-align: center;
+        font-size: min(9vw, 2rem);
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    &_header {
+        padding: 15px 5px;
+    }
+
+    &_footer {
+        padding: 20px 0;
+    }
+}

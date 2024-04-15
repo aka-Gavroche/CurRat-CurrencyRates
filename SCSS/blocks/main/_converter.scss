@@ -1,0 +1,63 @@
+.converter {
+    display: grid;
+    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-rows: repeat(3, max-content);
+    justify-content: space-between;
+    row-gap: 15px;
+    column-gap: 20px;
+
+    align-items: center;
+
+    &__btn {
+        grid-column: 2 / 4;
+        text-align: center;
+        display: grid;
+    }
+
+    &__btn-img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        display: block;
+        transition: 0.15s transform  ease-in-out;
+        filter: drop-shadow(0px 0px 1px #000);
+        
+        &_rotated {
+            transform: rotate(180deg);
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        text-align: center;
+
+        &:nth-of-type(1) {
+            text-align: right;
+        }
+
+        &:nth-of-type(2) {
+            text-align: left;
+        }
+    }
+
+    &__item {
+        padding: 10px;
+        width: 100%;
+        border-radius: 8px;
+
+        box-shadow: var(--input-box-shadow);
+        background-color: var(--section-background);
+        color: var(--font-color);
+        font-size: 1rem;
+        // text-align: center;
+        font-family: "Scada", sans-serif;
+        
+        appearance: none;
+        
+        grid-column: span 2;
+    }
+}

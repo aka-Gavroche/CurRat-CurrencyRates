@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+
+    &__img {
+        width: min(15.625vw, 70px);
+        filter: drop-shadow(var(--logo-box-shadow));
+        object-fit: cover;
+    }
+
+    &__title {
+        font-size: min(8.5vw, 3rem);
+        font-weight: 600;
+    }
+
+    &__subtitle {
+        font-weight: 800;
+        color: var(--header-subtitle-color);
+    }
+}

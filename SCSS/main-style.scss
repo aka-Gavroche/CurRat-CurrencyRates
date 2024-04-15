@@ -1,0 +1,37 @@
+@import "../SCSS/common-blocks/reset"; // обнулення стилів
+@import "./variables";
+
+// Підключення шрифтів
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scada:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Condensed&display=swap');
+
+body {
+    font-family: "Scada", sans-serif;
+    background-color: var(--body-background);
+    color: var(--font-color);
+    min-height: 100%;
+}
+
+.none {
+    display: none !important;
+}
+
+// COMMON BLOCKS
+@import "./common-blocks/container"; 
+@import "./common-blocks/theme-switch";
+@import "./common-blocks/simpleBar";
+
+// HEADER
+@import "./blocks/header/header";
+
+// MAIN
+@import "./blocks/main/main";
+@import "./common-blocks/main-wrapper";
+@import "./common-blocks/section";
+@import "./blocks/main/currency";
+@import "./blocks/main/converter";
+@import "./common-blocks/video-block";
+
+// FOOTER
+@import "./blocks/footer/footer";
+

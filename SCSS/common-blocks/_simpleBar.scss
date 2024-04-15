@@ -1,0 +1,11 @@
+.simpleBar {
+    max-height: 600px;
+    padding: 8px 15px;  
+    border-top: 3px solid var(--font-color);
+    border-bottom: 3px solid var(--font-color);
+    
+}
+
+.simplebar-scrollbar::before {
+    background-color: var(--font-color);
+  }
